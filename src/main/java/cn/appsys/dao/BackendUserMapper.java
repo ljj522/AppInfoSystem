@@ -1,7 +1,7 @@
 package cn.appsys.dao;
 
-import cn.smbms.pojo.BackendUser;
-import cn.smbms.pojo.BackendUserExample;
+import cn.appsys.pojo.BackendUser;
+import cn.appsys.pojo.BackendUserExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 

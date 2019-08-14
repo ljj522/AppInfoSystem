@@ -1,7 +1,7 @@
 package cn.appsys.dao;
 
-import cn.smbms.pojo.Promotion;
-import cn.smbms.pojo.PromotionExample;
+import cn.appsys.pojo.Promotion;
+import cn.appsys.pojo.PromotionExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 

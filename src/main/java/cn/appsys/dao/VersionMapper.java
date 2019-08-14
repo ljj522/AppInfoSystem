@@ -1,7 +1,7 @@
 package cn.appsys.dao;
 
-import cn.smbms.pojo.Version;
-import cn.smbms.pojo.VersionExample;
+import cn.appsys.pojo.Version;
+import cn.appsys.pojo.VersionExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 

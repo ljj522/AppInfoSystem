@@ -1,7 +1,7 @@
 package cn.appsys.dao;
 
-import cn.smbms.pojo.Dictionary;
-import cn.smbms.pojo.DictionaryExample;
+import cn.appsys.pojo.Dictionary;
+import cn.appsys.pojo.DictionaryExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
