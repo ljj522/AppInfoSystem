@@ -4,7 +4,9 @@ import cn.appsys.pojo.BackendUser;
 import cn.appsys.pojo.BackendUserExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface BackendUserMapper {
     long countByExample(BackendUserExample example);
 

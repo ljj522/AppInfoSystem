@@ -4,7 +4,9 @@ import cn.appsys.pojo.AppVersion;
 import cn.appsys.pojo.AppVersionExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface AppVersionMapper {
     long countByExample(AppVersionExample example);
 

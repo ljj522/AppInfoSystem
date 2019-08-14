@@ -4,7 +4,9 @@ import cn.appsys.pojo.AppCategory;
 import cn.appsys.pojo.AppCategoryExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface AppCategoryMapper {
     long countByExample(AppCategoryExample example);
 

@@ -4,7 +4,9 @@ import cn.appsys.pojo.AdPromotion;
 import cn.appsys.pojo.AdPromotionExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface AdPromotionMapper {
     long countByExample(AdPromotionExample example);
 

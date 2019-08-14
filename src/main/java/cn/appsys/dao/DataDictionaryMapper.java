@@ -4,7 +4,9 @@ import cn.appsys.pojo.DataDictionary;
 import cn.appsys.pojo.DataDictionaryExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface DataDictionaryMapper {
     long countByExample(DataDictionaryExample example);
 

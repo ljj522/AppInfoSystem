@@ -4,7 +4,9 @@ import cn.appsys.pojo.AppInfo;
 import cn.appsys.pojo.AppInfoExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface AppInfoMapper {
     long countByExample(AppInfoExample example);
 

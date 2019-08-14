@@ -4,7 +4,9 @@ import cn.appsys.pojo.DevUser;
 import cn.appsys.pojo.DevUserExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface DevUserMapper {
     long countByExample(DevUserExample example);
 

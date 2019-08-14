@@ -1,4 +1,4 @@
-package cn.appsys.utils;
+package cn.appsys.tools;
 
 import java.io.IOException;
 import java.io.InputStream;
