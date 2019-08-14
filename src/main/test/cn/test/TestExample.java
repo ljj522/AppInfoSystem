@@ -1,5 +1,8 @@
 package cn.test;
 
+import cn.appsys.dao.InfoMapper;
+import cn.appsys.pojo.Info;
+import cn.appsys.pojo.InfoExample;
 import cn.appsys.utils.MyBatisUtils;
 import org.apache.ibatis.session.SqlSession;
 import org.junit.Test;
