@@ -3,76 +3,103 @@ package cn.appsys.pojo;
 import java.util.Date;
 
 public class DevUser {
-	private Integer id;//主键id
-	private String devCode;//开发者帐号(系统登录账号)
-	private String devName;//开发者名称
-	private String devPassword;//开发者密码
-	private String devEmail;//开发者邮箱
-	private String devInfo;	//开发者简介
-	private Integer createdBy;//创建者
-	private Date creationDate;//创建时间
-	private Integer modifyBy;//更新者
-	private Date modifyDate;//更新时间
-	
-	public Integer getId() {
-		return id;
-	}
-	public void setId(Integer id) {
-		this.id = id;
-	}
-	public String getDevCode() {
-		return devCode;
-	}
-	public void setDevCode(String devCode) {
-		this.devCode = devCode;
-	}
-	public String getDevName() {
-		return devName;
-	}
-	public void setDevName(String devName) {
-		this.devName = devName;
-	}
-	public String getDevPassword() {
-		return devPassword;
-	}
-	public void setDevPassword(String devPassword) {
-		this.devPassword = devPassword;
-	}
-	public String getDevEmail() {
-		return devEmail;
-	}
-	public void setDevEmail(String devEmail) {
-		this.devEmail = devEmail;
-	}
-	public String getDevInfo() {
-		return devInfo;
-	}
-	public void setDevInfo(String devInfo) {
-		this.devInfo = devInfo;
-	}
-	public Integer getCreatedBy() {
-		return createdBy;
-	}
-	public void setCreatedBy(Integer createdBy) {
-		this.createdBy = createdBy;
-	}
-	public Date getCreationDate() {
-		return creationDate;
-	}
-	public void setCreationDate(Date creationDate) {
-		this.creationDate = creationDate;
-	}
-	public Integer getModifyBy() {
-		return modifyBy;
-	}
-	public void setModifyBy(Integer modifyBy) {
-		this.modifyBy = modifyBy;
-	}
-	public Date getModifyDate() {
-		return modifyDate;
-	}
-	public void setModifyDate(Date modifyDate) {
-		this.modifyDate = modifyDate;
-	}
-	
+    private Long id;
+
+    private String devcode;
+
+    private String devname;
+
+    private String devpassword;
+
+    private String devemail;
+
+    private String devinfo;
+
+    private Long createdby;
+
+    private Date creationdate;
+
+    private Long modifyby;
+
+    private Date modifydate;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getDevcode() {
+        return devcode;
+    }
+
+    public void setDevcode(String devcode) {
+        this.devcode = devcode == null ? null : devcode.trim();
+    }
+
+    public String getDevname() {
+        return devname;
+    }
+
+    public void setDevname(String devname) {
+        this.devname = devname == null ? null : devname.trim();
+    }
+
+    public String getDevpassword() {
+        return devpassword;
+    }
+
+    public void setDevpassword(String devpassword) {
+        this.devpassword = devpassword == null ? null : devpassword.trim();
+    }
+
+    public String getDevemail() {
+        return devemail;
+    }
+
+    public void setDevemail(String devemail) {
+        this.devemail = devemail == null ? null : devemail.trim();
+    }
+
+    public String getDevinfo() {
+        return devinfo;
+    }
+
+    public void setDevinfo(String devinfo) {
+        this.devinfo = devinfo == null ? null : devinfo.trim();
+    }
+
+    public Long getCreatedby() {
+        return createdby;
+    }
+
+    public void setCreatedby(Long createdby) {
+        this.createdby = createdby;
+    }
+
+    public Date getCreationdate() {
+        return creationdate;
+    }
+
+    public void setCreationdate(Date creationdate) {
+        this.creationdate = creationdate;
+    }
+
+    public Long getModifyby() {
+        return modifyby;
+    }
+
+    public void setModifyby(Long modifyby) {
+        this.modifyby = modifyby;
+    }
+
+    public Date getModifydate() {
+        return modifydate;
+    }
+
+    public void setModifydate(Date modifydate) {
+        this.modifydate = modifydate;
+    }
 }

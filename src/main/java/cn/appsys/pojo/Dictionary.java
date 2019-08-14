@@ -2,14 +2,16 @@ package cn.appsys.pojo;
 
 import java.util.Date;
 
-public class BackendUser {
+public class Dictionary {
     private Long id;
 
-    private String usercode;
+    private String typecode;
 
-    private String username;
+    private String typename;
 
-    private Long usertype;
+    private Long valueid;
+
+    private String valuename;
 
     private Long createdby;
 
@@ -19,8 +21,6 @@ public class BackendUser {
 
     private Date modifydate;
 
-    private String userpassword;
-
     public Long getId() {
         return id;
     }
@@ -29,28 +29,36 @@ public class BackendUser {
         this.id = id;
     }
 
-    public String getUsercode() {
-        return usercode;
+    public String getTypecode() {
+        return typecode;
     }
 
-    public void setUsercode(String usercode) {
-        this.usercode = usercode == null ? null : usercode.trim();
+    public void setTypecode(String typecode) {
+        this.typecode = typecode == null ? null : typecode.trim();
     }
 
-    public String getUsername() {
-        return username;
+    public String getTypename() {
+        return typename;
     }
 
-    public void setUsername(String username) {
-        this.username = username == null ? null : username.trim();
+    public void setTypename(String typename) {
+        this.typename = typename == null ? null : typename.trim();
     }
 
-    public Long getUsertype() {
-        return usertype;
+    public Long getValueid() {
+        return valueid;
     }
 
-    public void setUsertype(Long usertype) {
-        this.usertype = usertype;
+    public void setValueid(Long valueid) {
+        this.valueid = valueid;
+    }
+
+    public String getValuename() {
+        return valuename;
+    }
+
+    public void setValuename(String valuename) {
+        this.valuename = valuename == null ? null : valuename.trim();
     }
 
     public Long getCreatedby() {
@@ -83,13 +91,5 @@ public class BackendUser {
 
     public void setModifydate(Date modifydate) {
         this.modifydate = modifydate;
-    }
-
-    public String getUserpassword() {
-        return userpassword;
-    }
-
-    public void setUserpassword(String userpassword) {
-        this.userpassword = userpassword == null ? null : userpassword.trim();
     }
 }
