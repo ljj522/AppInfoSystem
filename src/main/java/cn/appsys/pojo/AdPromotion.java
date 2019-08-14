@@ -2,7 +2,7 @@ package cn.appsys.pojo;
 
 import java.util.Date;
 
-public class Promotion {
+public class AdPromotion {
     private Long id;
 
     private Long appid;

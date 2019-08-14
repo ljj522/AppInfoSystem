@@ -2,7 +2,7 @@ package cn.appsys.pojo;
 
 import java.util.Date;
 
-public class Dictionary {
+public class DataDictionary {
     private Long id;
 
     private String typecode;

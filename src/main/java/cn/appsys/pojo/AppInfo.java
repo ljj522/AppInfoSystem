@@ -3,7 +3,7 @@ package cn.appsys.pojo;
 import java.math.BigDecimal;
 import java.util.Date;
 
-public class Info {
+public class AppInfo {
     private Long id;
 
     private String softwarename;

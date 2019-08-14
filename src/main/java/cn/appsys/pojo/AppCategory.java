@@ -2,7 +2,7 @@ package cn.appsys.pojo;
 
 import java.util.Date;
 
-public class Category {
+public class AppCategory {
     private Long id;
 
     private String categorycode;
