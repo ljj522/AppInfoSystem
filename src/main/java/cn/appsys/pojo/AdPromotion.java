@@ -5,25 +5,25 @@ import java.util.Date;
 public class AdPromotion {
     private Long id;
 
-    private Long appid;
+    private Long appId;
 
-    private String adpicpath;
+    private String adPicPath;
 
-    private Long adpv;
+    private Long adPV;
 
-    private Integer carouselposition;
+    private Integer carouselPosition;
 
-    private Date starttime;
+    private Date startTime;
 
-    private Date endtime;
+    private Date endTime;
 
-    private Long createdby;
+    private Long createdBy;
 
-    private Date creationdate;
+    private Date creationDate;
 
-    private Long modifyby;
+    private Long modifyBy;
 
-    private Date modifydate;
+    private Date modifyDate;
 
     public Long getId() {
         return id;
@@ -33,83 +33,83 @@ public class AdPromotion {
         this.id = id;
     }
 
-    public Long getAppid() {
-        return appid;
+    public Long getAppId() {
+        return appId;
     }
 
-    public void setAppid(Long appid) {
-        this.appid = appid;
+    public void setAppId(Long appId) {
+        this.appId = appId;
     }
 
-    public String getAdpicpath() {
-        return adpicpath;
+    public String getAdPicPath() {
+        return adPicPath;
     }
 
-    public void setAdpicpath(String adpicpath) {
-        this.adpicpath = adpicpath == null ? null : adpicpath.trim();
+    public void setAdPicPath(String adPicPath) {
+        this.adPicPath = adPicPath == null ? null : adPicPath.trim();
     }
 
-    public Long getAdpv() {
-        return adpv;
+    public Long getAdPV() {
+        return adPV;
     }
 
-    public void setAdpv(Long adpv) {
-        this.adpv = adpv;
+    public void setAdPV(Long adPV) {
+        this.adPV = adPV;
     }
 
-    public Integer getCarouselposition() {
-        return carouselposition;
+    public Integer getCarouselPosition() {
+        return carouselPosition;
     }
 
-    public void setCarouselposition(Integer carouselposition) {
-        this.carouselposition = carouselposition;
+    public void setCarouselPosition(Integer carouselPosition) {
+        this.carouselPosition = carouselPosition;
     }
 
-    public Date getStarttime() {
-        return starttime;
+    public Date getStartTime() {
+        return startTime;
     }
 
-    public void setStarttime(Date starttime) {
-        this.starttime = starttime;
+    public void setStartTime(Date startTime) {
+        this.startTime = startTime;
     }
 
-    public Date getEndtime() {
-        return endtime;
+    public Date getEndTime() {
+        return endTime;
     }
 
-    public void setEndtime(Date endtime) {
-        this.endtime = endtime;
+    public void setEndTime(Date endTime) {
+        this.endTime = endTime;
     }
 
-    public Long getCreatedby() {
-        return createdby;
+    public Long getCreatedBy() {
+        return createdBy;
     }
 
-    public void setCreatedby(Long createdby) {
-        this.createdby = createdby;
+    public void setCreatedBy(Long createdBy) {
+        this.createdBy = createdBy;
     }
 
-    public Date getCreationdate() {
-        return creationdate;
+    public Date getCreationDate() {
+        return creationDate;
     }
 
-    public void setCreationdate(Date creationdate) {
-        this.creationdate = creationdate;
+    public void setCreationDate(Date creationDate) {
+        this.creationDate = creationDate;
     }
 
-    public Long getModifyby() {
-        return modifyby;
+    public Long getModifyBy() {
+        return modifyBy;
     }
 
-    public void setModifyby(Long modifyby) {
-        this.modifyby = modifyby;
+    public void setModifyBy(Long modifyBy) {
+        this.modifyBy = modifyBy;
     }
 
-    public Date getModifydate() {
-        return modifydate;
+    public Date getModifyDate() {
+        return modifyDate;
     }
 
-    public void setModifydate(Date modifydate) {
-        this.modifydate = modifydate;
+    public void setModifyDate(Date modifyDate) {
+        this.modifyDate = modifyDate;
     }
 }

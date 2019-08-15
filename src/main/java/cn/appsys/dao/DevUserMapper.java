@@ -1,8 +1,9 @@
 package cn.appsys.dao;
 
+import java.util.List;
+
 import cn.appsys.pojo.DevUser;
 import cn.appsys.pojo.DevUserExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 

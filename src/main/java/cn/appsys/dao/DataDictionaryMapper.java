@@ -1,8 +1,9 @@
 package cn.appsys.dao;
 
+import java.util.List;
+
 import cn.appsys.pojo.DataDictionary;
 import cn.appsys.pojo.DataDictionaryExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 

@@ -6,51 +6,51 @@ import java.util.Date;
 public class AppInfo {
     private Long id;
 
-    private String softwarename;
+    private String softwareName;
 
-    private String apkname;
+    private String APKName;
 
-    private String supportrom;
+    private String supportROM;
 
-    private String interfacelanguage;
+    private String interfaceLanguage;
 
-    private BigDecimal softwaresize;
+    private BigDecimal softwareSize;
 
-    private Date updatedate;
+    private Date updateDate;
 
-    private Long devid;
+    private Long devId;
 
-    private String appinfo;
+    private String appInfo;
 
     private Long status;
 
-    private Date onsaledate;
+    private Date onSaleDate;
 
-    private Date offsaledate;
+    private Date offSaleDate;
 
-    private Long flatformid;
+    private Long flatformId;
 
-    private Long categorylevel3;
+    private Long categoryLevel3;
 
     private Long downloads;
 
-    private Long createdby;
+    private Long createdBy;
 
-    private Date creationdate;
+    private Date creationDate;
 
-    private Long modifyby;
+    private Long modifyBy;
 
-    private Date modifydate;
+    private Date modifyDate;
 
-    private Long categorylevel1;
+    private Long categoryLevel1;
 
-    private Long categorylevel2;
+    private Long categoryLevel2;
 
-    private String logopicpath;
+    private String logoPicPath;
 
-    private String logolocpath;
+    private String logoLocPath;
 
-    private Long versionid;
+    private Long versionId;
 
     public Long getId() {
         return id;
@@ -60,68 +60,68 @@ public class AppInfo {
         this.id = id;
     }
 
-    public String getSoftwarename() {
-        return softwarename;
+    public String getSoftwareName() {
+        return softwareName;
     }
 
-    public void setSoftwarename(String softwarename) {
-        this.softwarename = softwarename == null ? null : softwarename.trim();
+    public void setSoftwareName(String softwareName) {
+        this.softwareName = softwareName == null ? null : softwareName.trim();
     }
 
-    public String getApkname() {
-        return apkname;
+    public String getAPKName() {
+        return APKName;
     }
 
-    public void setApkname(String apkname) {
-        this.apkname = apkname == null ? null : apkname.trim();
+    public void setAPKName(String APKName) {
+        this.APKName = APKName == null ? null : APKName.trim();
     }
 
-    public String getSupportrom() {
-        return supportrom;
+    public String getSupportROM() {
+        return supportROM;
     }
 
-    public void setSupportrom(String supportrom) {
-        this.supportrom = supportrom == null ? null : supportrom.trim();
+    public void setSupportROM(String supportROM) {
+        this.supportROM = supportROM == null ? null : supportROM.trim();
     }
 
-    public String getInterfacelanguage() {
-        return interfacelanguage;
+    public String getInterfaceLanguage() {
+        return interfaceLanguage;
     }
 
-    public void setInterfacelanguage(String interfacelanguage) {
-        this.interfacelanguage = interfacelanguage == null ? null : interfacelanguage.trim();
+    public void setInterfaceLanguage(String interfaceLanguage) {
+        this.interfaceLanguage = interfaceLanguage == null ? null : interfaceLanguage.trim();
     }
 
-    public BigDecimal getSoftwaresize() {
-        return softwaresize;
+    public BigDecimal getSoftwareSize() {
+        return softwareSize;
     }
 
-    public void setSoftwaresize(BigDecimal softwaresize) {
-        this.softwaresize = softwaresize;
+    public void setSoftwareSize(BigDecimal softwareSize) {
+        this.softwareSize = softwareSize;
     }
 
-    public Date getUpdatedate() {
-        return updatedate;
+    public Date getUpdateDate() {
+        return updateDate;
     }
 
-    public void setUpdatedate(Date updatedate) {
-        this.updatedate = updatedate;
+    public void setUpdateDate(Date updateDate) {
+        this.updateDate = updateDate;
     }
 
-    public Long getDevid() {
-        return devid;
+    public Long getDevId() {
+        return devId;
     }
 
-    public void setDevid(Long devid) {
-        this.devid = devid;
+    public void setDevId(Long devId) {
+        this.devId = devId;
     }
 
-    public String getAppinfo() {
-        return appinfo;
+    public String getAppInfo() {
+        return appInfo;
     }
 
-    public void setAppinfo(String appinfo) {
-        this.appinfo = appinfo == null ? null : appinfo.trim();
+    public void setAppInfo(String appInfo) {
+        this.appInfo = appInfo == null ? null : appInfo.trim();
     }
 
     public Long getStatus() {
@@ -132,36 +132,36 @@ public class AppInfo {
         this.status = status;
     }
 
-    public Date getOnsaledate() {
-        return onsaledate;
+    public Date getOnSaleDate() {
+        return onSaleDate;
     }
 
-    public void setOnsaledate(Date onsaledate) {
-        this.onsaledate = onsaledate;
+    public void setOnSaleDate(Date onSaleDate) {
+        this.onSaleDate = onSaleDate;
     }
 
-    public Date getOffsaledate() {
-        return offsaledate;
+    public Date getOffSaleDate() {
+        return offSaleDate;
     }
 
-    public void setOffsaledate(Date offsaledate) {
-        this.offsaledate = offsaledate;
+    public void setOffSaleDate(Date offSaleDate) {
+        this.offSaleDate = offSaleDate;
     }
 
-    public Long getFlatformid() {
-        return flatformid;
+    public Long getFlatformId() {
+        return flatformId;
     }
 
-    public void setFlatformid(Long flatformid) {
-        this.flatformid = flatformid;
+    public void setFlatformId(Long flatformId) {
+        this.flatformId = flatformId;
     }
 
-    public Long getCategorylevel3() {
-        return categorylevel3;
+    public Long getCategoryLevel3() {
+        return categoryLevel3;
     }
 
-    public void setCategorylevel3(Long categorylevel3) {
-        this.categorylevel3 = categorylevel3;
+    public void setCategoryLevel3(Long categoryLevel3) {
+        this.categoryLevel3 = categoryLevel3;
     }
 
     public Long getDownloads() {
@@ -172,75 +172,75 @@ public class AppInfo {
         this.downloads = downloads;
     }
 
-    public Long getCreatedby() {
-        return createdby;
+    public Long getCreatedBy() {
+        return createdBy;
     }
 
-    public void setCreatedby(Long createdby) {
-        this.createdby = createdby;
+    public void setCreatedBy(Long createdBy) {
+        this.createdBy = createdBy;
     }
 
-    public Date getCreationdate() {
-        return creationdate;
+    public Date getCreationDate() {
+        return creationDate;
     }
 
-    public void setCreationdate(Date creationdate) {
-        this.creationdate = creationdate;
+    public void setCreationDate(Date creationDate) {
+        this.creationDate = creationDate;
     }
 
-    public Long getModifyby() {
-        return modifyby;
+    public Long getModifyBy() {
+        return modifyBy;
     }
 
-    public void setModifyby(Long modifyby) {
-        this.modifyby = modifyby;
+    public void setModifyBy(Long modifyBy) {
+        this.modifyBy = modifyBy;
     }
 
-    public Date getModifydate() {
-        return modifydate;
+    public Date getModifyDate() {
+        return modifyDate;
     }
 
-    public void setModifydate(Date modifydate) {
-        this.modifydate = modifydate;
+    public void setModifyDate(Date modifyDate) {
+        this.modifyDate = modifyDate;
     }
 
-    public Long getCategorylevel1() {
-        return categorylevel1;
+    public Long getCategoryLevel1() {
+        return categoryLevel1;
     }
 
-    public void setCategorylevel1(Long categorylevel1) {
-        this.categorylevel1 = categorylevel1;
+    public void setCategoryLevel1(Long categoryLevel1) {
+        this.categoryLevel1 = categoryLevel1;
     }
 
-    public Long getCategorylevel2() {
-        return categorylevel2;
+    public Long getCategoryLevel2() {
+        return categoryLevel2;
     }
 
-    public void setCategorylevel2(Long categorylevel2) {
-        this.categorylevel2 = categorylevel2;
+    public void setCategoryLevel2(Long categoryLevel2) {
+        this.categoryLevel2 = categoryLevel2;
     }
 
-    public String getLogopicpath() {
-        return logopicpath;
+    public String getLogoPicPath() {
+        return logoPicPath;
     }
 
-    public void setLogopicpath(String logopicpath) {
-        this.logopicpath = logopicpath == null ? null : logopicpath.trim();
+    public void setLogoPicPath(String logoPicPath) {
+        this.logoPicPath = logoPicPath == null ? null : logoPicPath.trim();
     }
 
-    public String getLogolocpath() {
-        return logolocpath;
+    public String getLogoLocPath() {
+        return logoLocPath;
     }
 
-    public void setLogolocpath(String logolocpath) {
-        this.logolocpath = logolocpath == null ? null : logolocpath.trim();
+    public void setLogoLocPath(String logoLocPath) {
+        this.logoLocPath = logoLocPath == null ? null : logoLocPath.trim();
     }
 
-    public Long getVersionid() {
-        return versionid;
+    public Long getVersionId() {
+        return versionId;
     }
 
-    public void setVersionid(Long versionid) {
-        this.versionid = versionid;
+    public void setVersionId(Long versionId) {
+        this.versionId = versionId;
     }
 }

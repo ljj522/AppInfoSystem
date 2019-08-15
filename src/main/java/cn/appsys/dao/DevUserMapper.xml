@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.appsys.dao.DevUserMapper">
   <resultMap id="BaseResultMap" type="cn.appsys.pojo.DevUser">
     <id column="id" jdbcType="BIGINT" property="id" />
-    <result column="devCode" jdbcType="VARCHAR" property="devcode" />
-    <result column="devName" jdbcType="VARCHAR" property="devname" />
-    <result column="devPassword" jdbcType="VARCHAR" property="devpassword" />
-    <result column="devEmail" jdbcType="VARCHAR" property="devemail" />
-    <result column="devInfo" jdbcType="VARCHAR" property="devinfo" />
-    <result column="createdBy" jdbcType="BIGINT" property="createdby" />
-    <result column="creationDate" jdbcType="TIMESTAMP" property="creationdate" />
-    <result column="modifyBy" jdbcType="BIGINT" property="modifyby" />
-    <result column="modifyDate" jdbcType="TIMESTAMP" property="modifydate" />
+    <result column="devCode" jdbcType="VARCHAR" property="devCode" />
+    <result column="devName" jdbcType="VARCHAR" property="devName" />
+    <result column="devPassword" jdbcType="VARCHAR" property="devPassword" />
+    <result column="devEmail" jdbcType="VARCHAR" property="devEmail" />
+    <result column="devInfo" jdbcType="VARCHAR" property="devInfo" />
+    <result column="createdBy" jdbcType="BIGINT" property="createdBy" />
+    <result column="creationDate" jdbcType="TIMESTAMP" property="creationDate" />
+    <result column="modifyBy" jdbcType="BIGINT" property="modifyBy" />
+    <result column="modifyDate" jdbcType="TIMESTAMP" property="modifyDate" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -110,10 +110,10 @@
       devPassword, devEmail, devInfo, 
       createdBy, creationDate, modifyBy, 
       modifyDate)
-    values (#{id,jdbcType=BIGINT}, #{devcode,jdbcType=VARCHAR}, #{devname,jdbcType=VARCHAR}, 
-      #{devpassword,jdbcType=VARCHAR}, #{devemail,jdbcType=VARCHAR}, #{devinfo,jdbcType=VARCHAR}, 
-      #{createdby,jdbcType=BIGINT}, #{creationdate,jdbcType=TIMESTAMP}, #{modifyby,jdbcType=BIGINT}, 
-      #{modifydate,jdbcType=TIMESTAMP})
+    values (#{id,jdbcType=BIGINT}, #{devCode,jdbcType=VARCHAR}, #{devName,jdbcType=VARCHAR}, 
+      #{devPassword,jdbcType=VARCHAR}, #{devEmail,jdbcType=VARCHAR}, #{devInfo,jdbcType=VARCHAR}, 
+      #{createdBy,jdbcType=BIGINT}, #{creationDate,jdbcType=TIMESTAMP}, #{modifyBy,jdbcType=BIGINT}, 
+      #{modifyDate,jdbcType=TIMESTAMP})
   </insert>
   <insert id="insertSelective" parameterType="cn.appsys.pojo.DevUser">
     insert into dev_user
@@ -121,31 +121,31 @@
       <if test="id != null">
         id,
       </if>
-      <if test="devcode != null">
+      <if test="devCode != null">
         devCode,
       </if>
-      <if test="devname != null">
+      <if test="devName != null">
         devName,
       </if>
-      <if test="devpassword != null">
+      <if test="devPassword != null">
         devPassword,
       </if>
-      <if test="devemail != null">
+      <if test="devEmail != null">
         devEmail,
       </if>
-      <if test="devinfo != null">
+      <if test="devInfo != null">
         devInfo,
       </if>
-      <if test="createdby != null">
+      <if test="createdBy != null">
         createdBy,
       </if>
-      <if test="creationdate != null">
+      <if test="creationDate != null">
         creationDate,
       </if>
-      <if test="modifyby != null">
+      <if test="modifyBy != null">
         modifyBy,
       </if>
-      <if test="modifydate != null">
+      <if test="modifyDate != null">
         modifyDate,
       </if>
     </trim>
@@ -153,32 +153,32 @@
       <if test="id != null">
         #{id,jdbcType=BIGINT},
       </if>
-      <if test="devcode != null">
-        #{devcode,jdbcType=VARCHAR},
+      <if test="devCode != null">
+        #{devCode,jdbcType=VARCHAR},
       </if>
-      <if test="devname != null">
-        #{devname,jdbcType=VARCHAR},
+      <if test="devName != null">
+        #{devName,jdbcType=VARCHAR},
       </if>
-      <if test="devpassword != null">
-        #{devpassword,jdbcType=VARCHAR},
+      <if test="devPassword != null">
+        #{devPassword,jdbcType=VARCHAR},
       </if>
-      <if test="devemail != null">
-        #{devemail,jdbcType=VARCHAR},
+      <if test="devEmail != null">
+        #{devEmail,jdbcType=VARCHAR},
       </if>
-      <if test="devinfo != null">
-        #{devinfo,jdbcType=VARCHAR},
+      <if test="devInfo != null">
+        #{devInfo,jdbcType=VARCHAR},
       </if>
-      <if test="createdby != null">
-        #{createdby,jdbcType=BIGINT},
+      <if test="createdBy != null">
+        #{createdBy,jdbcType=BIGINT},
       </if>
-      <if test="creationdate != null">
-        #{creationdate,jdbcType=TIMESTAMP},
+      <if test="creationDate != null">
+        #{creationDate,jdbcType=TIMESTAMP},
       </if>
-      <if test="modifyby != null">
-        #{modifyby,jdbcType=BIGINT},
+      <if test="modifyBy != null">
+        #{modifyBy,jdbcType=BIGINT},
       </if>
-      <if test="modifydate != null">
-        #{modifydate,jdbcType=TIMESTAMP},
+      <if test="modifyDate != null">
+        #{modifyDate,jdbcType=TIMESTAMP},
       </if>
     </trim>
   </insert>
@@ -194,32 +194,32 @@
       <if test="record.id != null">
         id = #{record.id,jdbcType=BIGINT},
       </if>
-      <if test="record.devcode != null">
-        devCode = #{record.devcode,jdbcType=VARCHAR},
+      <if test="record.devCode != null">
+        devCode = #{record.devCode,jdbcType=VARCHAR},
       </if>
-      <if test="record.devname != null">
-        devName = #{record.devname,jdbcType=VARCHAR},
+      <if test="record.devName != null">
+        devName = #{record.devName,jdbcType=VARCHAR},
       </if>
-      <if test="record.devpassword != null">
-        devPassword = #{record.devpassword,jdbcType=VARCHAR},
+      <if test="record.devPassword != null">
+        devPassword = #{record.devPassword,jdbcType=VARCHAR},
       </if>
-      <if test="record.devemail != null">
-        devEmail = #{record.devemail,jdbcType=VARCHAR},
+      <if test="record.devEmail != null">
+        devEmail = #{record.devEmail,jdbcType=VARCHAR},
       </if>
-      <if test="record.devinfo != null">
-        devInfo = #{record.devinfo,jdbcType=VARCHAR},
+      <if test="record.devInfo != null">
+        devInfo = #{record.devInfo,jdbcType=VARCHAR},
       </if>
-      <if test="record.createdby != null">
-        createdBy = #{record.createdby,jdbcType=BIGINT},
+      <if test="record.createdBy != null">
+        createdBy = #{record.createdBy,jdbcType=BIGINT},
       </if>
-      <if test="record.creationdate != null">
-        creationDate = #{record.creationdate,jdbcType=TIMESTAMP},
+      <if test="record.creationDate != null">
+        creationDate = #{record.creationDate,jdbcType=TIMESTAMP},
       </if>
-      <if test="record.modifyby != null">
-        modifyBy = #{record.modifyby,jdbcType=BIGINT},
+      <if test="record.modifyBy != null">
+        modifyBy = #{record.modifyBy,jdbcType=BIGINT},
       </if>
-      <if test="record.modifydate != null">
-        modifyDate = #{record.modifydate,jdbcType=TIMESTAMP},
+      <if test="record.modifyDate != null">
+        modifyDate = #{record.modifyDate,jdbcType=TIMESTAMP},
       </if>
     </set>
     <if test="_parameter != null">
@@ -229,15 +229,15 @@
   <update id="updateByExample" parameterType="map">
     update dev_user
     set id = #{record.id,jdbcType=BIGINT},
-      devCode = #{record.devcode,jdbcType=VARCHAR},
-      devName = #{record.devname,jdbcType=VARCHAR},
-      devPassword = #{record.devpassword,jdbcType=VARCHAR},
-      devEmail = #{record.devemail,jdbcType=VARCHAR},
-      devInfo = #{record.devinfo,jdbcType=VARCHAR},
-      createdBy = #{record.createdby,jdbcType=BIGINT},
-      creationDate = #{record.creationdate,jdbcType=TIMESTAMP},
-      modifyBy = #{record.modifyby,jdbcType=BIGINT},
-      modifyDate = #{record.modifydate,jdbcType=TIMESTAMP}
+      devCode = #{record.devCode,jdbcType=VARCHAR},
+      devName = #{record.devName,jdbcType=VARCHAR},
+      devPassword = #{record.devPassword,jdbcType=VARCHAR},
+      devEmail = #{record.devEmail,jdbcType=VARCHAR},
+      devInfo = #{record.devInfo,jdbcType=VARCHAR},
+      createdBy = #{record.createdBy,jdbcType=BIGINT},
+      creationDate = #{record.creationDate,jdbcType=TIMESTAMP},
+      modifyBy = #{record.modifyBy,jdbcType=BIGINT},
+      modifyDate = #{record.modifyDate,jdbcType=TIMESTAMP}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -245,47 +245,47 @@
   <update id="updateByPrimaryKeySelective" parameterType="cn.appsys.pojo.DevUser">
     update dev_user
     <set>
-      <if test="devcode != null">
-        devCode = #{devcode,jdbcType=VARCHAR},
+      <if test="devCode != null">
+        devCode = #{devCode,jdbcType=VARCHAR},
       </if>
-      <if test="devname != null">
-        devName = #{devname,jdbcType=VARCHAR},
+      <if test="devName != null">
+        devName = #{devName,jdbcType=VARCHAR},
       </if>
-      <if test="devpassword != null">
-        devPassword = #{devpassword,jdbcType=VARCHAR},
+      <if test="devPassword != null">
+        devPassword = #{devPassword,jdbcType=VARCHAR},
       </if>
-      <if test="devemail != null">
-        devEmail = #{devemail,jdbcType=VARCHAR},
+      <if test="devEmail != null">
+        devEmail = #{devEmail,jdbcType=VARCHAR},
       </if>
-      <if test="devinfo != null">
-        devInfo = #{devinfo,jdbcType=VARCHAR},
+      <if test="devInfo != null">
+        devInfo = #{devInfo,jdbcType=VARCHAR},
       </if>
-      <if test="createdby != null">
-        createdBy = #{createdby,jdbcType=BIGINT},
+      <if test="createdBy != null">
+        createdBy = #{createdBy,jdbcType=BIGINT},
       </if>
-      <if test="creationdate != null">
-        creationDate = #{creationdate,jdbcType=TIMESTAMP},
+      <if test="creationDate != null">
+        creationDate = #{creationDate,jdbcType=TIMESTAMP},
       </if>
-      <if test="modifyby != null">
-        modifyBy = #{modifyby,jdbcType=BIGINT},
+      <if test="modifyBy != null">
+        modifyBy = #{modifyBy,jdbcType=BIGINT},
       </if>
-      <if test="modifydate != null">
-        modifyDate = #{modifydate,jdbcType=TIMESTAMP},
+      <if test="modifyDate != null">
+        modifyDate = #{modifyDate,jdbcType=TIMESTAMP},
       </if>
     </set>
     where id = #{id,jdbcType=BIGINT}
   </update>
   <update id="updateByPrimaryKey" parameterType="cn.appsys.pojo.DevUser">
     update dev_user
-    set devCode = #{devcode,jdbcType=VARCHAR},
-      devName = #{devname,jdbcType=VARCHAR},
-      devPassword = #{devpassword,jdbcType=VARCHAR},
-      devEmail = #{devemail,jdbcType=VARCHAR},
-      devInfo = #{devinfo,jdbcType=VARCHAR},
-      createdBy = #{createdby,jdbcType=BIGINT},
-      creationDate = #{creationdate,jdbcType=TIMESTAMP},
-      modifyBy = #{modifyby,jdbcType=BIGINT},
-      modifyDate = #{modifydate,jdbcType=TIMESTAMP}
+    set devCode = #{devCode,jdbcType=VARCHAR},
+      devName = #{devName,jdbcType=VARCHAR},
+      devPassword = #{devPassword,jdbcType=VARCHAR},
+      devEmail = #{devEmail,jdbcType=VARCHAR},
+      devInfo = #{devInfo,jdbcType=VARCHAR},
+      createdBy = #{createdBy,jdbcType=BIGINT},
+      creationDate = #{creationDate,jdbcType=TIMESTAMP},
+      modifyBy = #{modifyBy,jdbcType=BIGINT},
+      modifyDate = #{modifyDate,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=BIGINT}
   </update>
 </mapper>

@@ -5,23 +5,23 @@ import java.util.Date;
 public class DevUser {
     private Long id;
 
-    private String devcode;
+    private String devCode;
 
-    private String devname;
+    private String devName;
 
-    private String devpassword;
+    private String devPassword;
 
-    private String devemail;
+    private String devEmail;
 
-    private String devinfo;
+    private String devInfo;
 
-    private Long createdby;
+    private Long createdBy;
 
-    private Date creationdate;
+    private Date creationDate;
 
-    private Long modifyby;
+    private Long modifyBy;
 
-    private Date modifydate;
+    private Date modifyDate;
 
     public Long getId() {
         return id;
@@ -31,75 +31,75 @@ public class DevUser {
         this.id = id;
     }
 
-    public String getDevcode() {
-        return devcode;
+    public String getDevCode() {
+        return devCode;
     }
 
-    public void setDevcode(String devcode) {
-        this.devcode = devcode == null ? null : devcode.trim();
+    public void setDevCode(String devCode) {
+        this.devCode = devCode == null ? null : devCode.trim();
     }
 
-    public String getDevname() {
-        return devname;
+    public String getDevName() {
+        return devName;
     }
 
-    public void setDevname(String devname) {
-        this.devname = devname == null ? null : devname.trim();
+    public void setDevName(String devName) {
+        this.devName = devName == null ? null : devName.trim();
     }
 
-    public String getDevpassword() {
-        return devpassword;
+    public String getDevPassword() {
+        return devPassword;
     }
 
-    public void setDevpassword(String devpassword) {
-        this.devpassword = devpassword == null ? null : devpassword.trim();
+    public void setDevPassword(String devPassword) {
+        this.devPassword = devPassword == null ? null : devPassword.trim();
     }
 
-    public String getDevemail() {
-        return devemail;
+    public String getDevEmail() {
+        return devEmail;
     }
 
-    public void setDevemail(String devemail) {
-        this.devemail = devemail == null ? null : devemail.trim();
+    public void setDevEmail(String devEmail) {
+        this.devEmail = devEmail == null ? null : devEmail.trim();
     }
 
-    public String getDevinfo() {
-        return devinfo;
+    public String getDevInfo() {
+        return devInfo;
     }
 
-    public void setDevinfo(String devinfo) {
-        this.devinfo = devinfo == null ? null : devinfo.trim();
+    public void setDevInfo(String devInfo) {
+        this.devInfo = devInfo == null ? null : devInfo.trim();
     }
 
-    public Long getCreatedby() {
-        return createdby;
+    public Long getCreatedBy() {
+        return createdBy;
     }
 
-    public void setCreatedby(Long createdby) {
-        this.createdby = createdby;
+    public void setCreatedBy(Long createdBy) {
+        this.createdBy = createdBy;
     }
 
-    public Date getCreationdate() {
-        return creationdate;
+    public Date getCreationDate() {
+        return creationDate;
     }
 
-    public void setCreationdate(Date creationdate) {
-        this.creationdate = creationdate;
+    public void setCreationDate(Date creationDate) {
+        this.creationDate = creationDate;
     }
 
-    public Long getModifyby() {
-        return modifyby;
+    public Long getModifyBy() {
+        return modifyBy;
     }
 
-    public void setModifyby(Long modifyby) {
-        this.modifyby = modifyby;
+    public void setModifyBy(Long modifyBy) {
+        this.modifyBy = modifyBy;
     }
 
-    public Date getModifydate() {
-        return modifydate;
+    public Date getModifyDate() {
+        return modifyDate;
     }
 
-    public void setModifydate(Date modifydate) {
-        this.modifydate = modifydate;
+    public void setModifyDate(Date modifyDate) {
+        this.modifyDate = modifyDate;
     }
 }
