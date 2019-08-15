@@ -47,15 +47,20 @@ public class DevLoginController {
             request.setAttribute("error", "用户名或密码不正确");
             return "jsp/devlogin";
         }
-/*        //处理登录结果
-        if (null != user){
-            //登录成功
-            session.setAttribute("userSession",user);
-            //返回视图
-            return "/jsp/developer/main";
-        }else {
-            model.addAttribute("error","登录失败");
-            return "/jsp/devlogin";
-        }*/
+    }
+
+    @RequestMapping("/flatform/main")
+    public String main(HttpSession session){
+        if(session.getAttribute(Constants.DEV_USER_SESSION) == null){
+            return "redirect:/dev/login";
+        }
+        return "jsp/developer/main";
+    }
+
+    @RequestMapping(value="/logout")
+    public String logout(HttpSession session){
+        //清除session
+        session.removeAttribute(Constants.DEV_USER_SESSION);
+        return "jsp/devlogin";
     }
 }
